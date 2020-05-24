@@ -37,7 +37,7 @@ from io import TextIOWrapper
 #                 https://github.com/Rapptz/RoboDanny/
 #
 
-description = "Red - A multifunction Discord bot by Twentysix"
+description = "Sefat Ullah Discord Bot by NSFW Lord#7076 \n Owner: DeviLShAnto#9446 \n\n মদ খা মদ, শালার পুত!"
 
 
 class Bot(commands.Bot):

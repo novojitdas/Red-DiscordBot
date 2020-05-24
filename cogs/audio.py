@@ -2054,9 +2054,9 @@ class Audio:
 
     @commands.command(pass_context=True, no_pm=True)
     async def sing(self, ctx):
-        """Makes Red sing one of her songs"""
-        ids = ("zGTkAVsrfg8", "cGMWL8cOeAU", "vFrjMq4aL-g", "WROI5WYBU_A",
-               "41tIUr_ex3g", "f9O2Rjn1azc")
+        """Makes Bot sing one of her songs"""
+        ids = ("Sai_Axpxp-o", "V7ehlezcwjI", "XqPweAyLNl0", "WROI5WYBU_A",
+               "HbVxKcfjmmY", "71ZC-s6GAV0")
         url = "https://www.youtube.com/watch?v={}".format(choice(ids))
         await ctx.invoke(self.play, url_or_search_terms=url)
 

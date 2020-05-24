@@ -26,7 +26,7 @@ REQS_NO_AUDIO_TXT = "requirements_no_audio.txt"
 FFMPEG_BUILDS_URL = "https://ffmpeg.zeranoe.com/builds/"
 
 INTRO = ("==========================\n"
-         "Red Discord Bot - Launcher\n"
+         "Sefat Ullah Bot - Launcher\n"
          "==========================\n")
 
 IS_WINDOWS = os.name == "nt"

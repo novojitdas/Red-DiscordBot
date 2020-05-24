@@ -256,7 +256,7 @@ class Owner:
 
     @commands.group(name="set", pass_context=True)
     async def _set(self, ctx):
-        """Changes Red's core settings"""
+        """Changes Bot's core settings"""
         if ctx.invoked_subcommand is None:
             await self.bot.send_cmd_help(ctx)
             return
@@ -628,7 +628,7 @@ class Owner:
     @commands.command()
     @checks.is_owner()
     async def shutdown(self, silently : bool=False):
-        """Shuts down Red"""
+        """Shuts down Bot"""
         wave = "\N{WAVING HAND SIGN}"
         skin = "\N{EMOJI MODIFIER FITZPATRICK TYPE-3}"
         try: # We don't want missing perms to stop our shutdown
@@ -641,7 +641,7 @@ class Owner:
     @commands.command()
     @checks.is_owner()
     async def restart(self, silently : bool=False):
-        """Attempts to restart Red
+        """Attempts to restart Bot
 
         Makes Red quit with exit code 26
         The restart is not guaranteed: it must be dealt
@@ -727,7 +727,7 @@ class Owner:
     @commands.command()
     @checks.is_owner()
     async def join(self):
-        """Shows Red's invite URL"""
+        """Shows Bot's invite URL"""
         if self.bot.user.bot:
             await self.bot.whisper("Invite URL: " + self.bot.oauth_url)
         else:
@@ -836,7 +836,7 @@ class Owner:
 
     @commands.command()
     async def info(self):
-        """Shows info about Red"""
+        """Shows info about Bot"""
         author_repo = "https://github.com/Twentysix26"
         red_repo = author_repo + "/Red-DiscordBot"
         server_url = "https://discord.gg/red"
@@ -884,7 +884,7 @@ class Owner:
 
     @commands.command()
     async def uptime(self):
-        """Shows Red's uptime"""
+        """Shows Bot's uptime"""
         since = self.bot.uptime.strftime("%Y-%m-%d %H:%M:%S")
         passed = self.get_bot_uptime()
         await self.bot.say("Been up for: **{}** (since {} UTC)"
@@ -892,7 +892,7 @@ class Owner:
 
     @commands.command()
     async def version(self):
-        """Shows Red's current version"""
+        """Shows Bot's current version"""
         response = self.bot.loop.run_in_executor(None, self._get_version)
         result = await asyncio.wait_for(response, timeout=10)
         try:
